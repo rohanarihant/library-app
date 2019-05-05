@@ -1,0 +1,170 @@
+$screen-min-md : 768px;
+$screen-max-md : 899px;
+$screen-max-sm : 320px;
+$common-size: 45%;
+$white-color: #fff;
+.container{
+    top: $common-size;
+    left: $common-size; 
+    width:40%;
+    height:auto;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: $white-color;
+    position:fixed;
+    border-radius: 10px;
+  
+    input{
+      color: #384047;
+      background-color: #e8eeef;
+      box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+      border: none;
+      border-radius: 4px;
+      padding: 1em;
+      margin-bottom: 1.2em;
+      width: 80%;
+    }
+    button{
+      font-weight: 600;
+      text-align: center;
+      font-size: 19px;
+      color: #ec2e77;
+      background-color: #004e92;
+      width: 60%;
+      border: none;
+      border-radius: 4px;
+      padding: 0.8em;
+      margin-top: 1em;
+      margin-bottom: 1em;
+      cursor: pointer;
+      overflow: hidden;
+      transition: all 200ms ease-in-out;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+      &:hover{
+        box-shadow: 0px 6px 10px rgba(0,0,0,0.3);
+        transform: translateY(-4px);
+        color:$white-color;
+      }
+  }
+  }
+
+  .errorText{
+    padding:0px;
+    margin:0px;
+    font-size: 1.5em;
+    color: red
+  }
+  #add-book-anchor{
+      color:$white-color;
+      float:left;
+  }
+  .title{
+    font-size: 1.2em;
+  }
+  
+  @media (min-width: $screen-max-sm) and (max-width: $screen-min-md) {
+    body{
+      background-color: #004e92;
+    }
+    #add-book-anchor{
+      font-size: 20px;
+      color:$white-color;
+      float:none;
+      margin:0px;
+    }
+    .container{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px;
+      margin-top: 30px;
+      background-color: $white-color;
+      position: static;
+      top: 0%;
+      left: 0%;
+      border-radius: 10px;
+    
+      button{
+        &:hover{
+          box-shadow: 0px 6px 10px rgba(0,0,0,0.3);
+          transform: translateY(-4px);
+          color:$white-color;
+        }
+      }
+    }
+    .title{
+      font-size: 1.2em;
+  
+    }
+    .errorText{
+      padding:0px;
+      margin:0px;
+      font-size: 0.9em;
+      color: red
+    }
+  
+  }
+
+  // for ipad and tablet
+  @media (min-width: $screen-min-md) and (max-width:$screen-max-md){
+    body{
+      background-color: #004e92;
+    }
+    #add-book-anchor{
+      font-size: 20px;
+      color:$white-color;
+      float:none;
+      margin:0px;
+    }
+    .container{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px;
+      margin-top: 30px;
+      background-color: $white-color;
+      position: static;
+      top: 0%;
+      left: 0%;
+      border-radius: 10px;
+      height:45em;
+      margin-top:20%;
+  
+      input {
+        color: #384047;
+        background-color: #e8eeef;
+        box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+        border: none;
+        border-radius: 4px;
+        padding: 2.5em;
+        margin-bottom: 2.2em;
+        width: 80%;
+        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+          font-size:30px;
+        }
+       
+      }
+      button{
+        font-size: 2em;
+        &:hover{
+          box-shadow: 0px 6px 10px rgba(0,0,0,0.3);
+          transform: translateY(-4px);
+          color:$white-color;
+        }
+      }
+    }
+    .title{
+      font-size: 3em;
+  
+    }
+    .errorText{
+      padding:0px;
+      margin:0px;
+      font-size: 1.5em;
+      color: red
+    }
+  
+  }
+
+  

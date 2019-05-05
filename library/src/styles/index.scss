@@ -1,0 +1,19 @@
+@import "./list.scss";
+@import "./add-book.scss";
+
+
+body{
+  font-family: 'Monospace';
+  background-color: #004e92;
+} 
+// a{
+//   // text-decoration: none;
+//   color: #fff;
+//   font-size: 20px;
+//   float: left;
+//   margin: 20px;
+// }
+.editIcon{
+  width:1.3em;
+  height:1.3em;
+}

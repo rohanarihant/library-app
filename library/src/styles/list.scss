@@ -1,0 +1,124 @@
+$screen-min-md : 768px;
+$screen-max-md : 899px;
+$screen-max-sm : 320px;
+$white-color: #fff;
+.list-container{
+    background-color: $white-color;
+    // margin:2em;
+    border-radius: 10px;
+  
+    span h3{
+          font-size: 1.5em;
+          margin: .5em 0 .75em;
+        }
+      
+        span input{
+          width: 20%;
+          height: 2em;
+          font-size: .8em;
+          margin: 1.5em .75em .75em;
+          float:right;
+        }
+    
+      
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+    
+    th, td {
+      text-align: left;
+      padding: 8px;
+    }
+  
+    
+    tr:nth-child(even){background-color: #f2f2f2}
+  }
+  #list-anchor{
+      font-size: 20px;
+      float: left;
+      margin: 20px;
+    color: #004e92;
+  }
+  //  for tablet and ipad
+  @media (min-width:$screen-min-md) and (max-width:$screen-max-md){
+    #list-anchor{
+      color: $white-color;
+      font-size: 1.5em;
+      float: none;
+      margin: 0px;
+    }
+    .list-container{
+      margin-top:1em;
+      span h3{
+        display:block;
+      }
+      span input{
+        margin:0px;
+        width:50%;
+        float:center;
+      }
+      th, td {
+        text-align: left;
+        padding: 5px;
+      }
+    }
+  }
+  // for small devices
+  @media (min-width:$screen-max-sm) and (max-width: $screen-min-md){
+    #list-anchor{
+        color: $white-color;
+        font-size: 1.5em;
+        float: none;
+        margin: 0px;
+      }
+    .list-container{
+      margin-top:1em;
+      span h3{
+        display:block;
+      }
+      span input{
+        margin:0px;
+        width:50%;
+        float:center;
+      }
+      th, td {
+        text-align: left;
+        padding: 5px;
+      }
+    }
+  }
+
+  .loading-overlay {
+    width: 300px;
+    text-align: center;
+  }
+  .overlay-container {
+    align-items: center;
+    justify-content: center;
+    /*display: none;*/
+    position: fixed;
+    top: 50%;
+    left: 26%;
+    width: 100%;
+    height: 100%;
+    /*background-color: black;
+    opacity: 0.5;*/
+    z-index: 10000; }
+    .overlay-container .overlay-backdrop {
+      /*display: none;*/
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      // background: grey;
+      opacity: 0.4;
+      z-index: -1; }
+      .dialog {
+    /*display: none;*/
+    width: 40%;
+    
+    border-radius: 0; }
